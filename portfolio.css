@@ -19,6 +19,7 @@ main {
 
 footer {
   margin-top: auto; 
+  
 }
 
 header {
@@ -84,13 +85,8 @@ nav {
     padding-top: 60px;
     padding-bottom: 10px; /* reduce gap on small screens */
   }
-  .home-text span{
-    font-size: 20px;
-  }
-  .home-text:hover span{
-    font-size: 100px;
-    color: #d7e6f6;
-  }
+  
+  
   
 }
 
@@ -141,6 +137,7 @@ nav a:hover {
 }
 
 #home-page{
+  flex: 1;
    min-height: 100vh;
     background: #002347;
     color: white;
@@ -241,8 +238,14 @@ section {
   font-size: 0.95rem;
   color: #333;
 }
-
-
+.home-text span {
+  transition: opacity 0.3s, color 0.3s;
+}
+.home-text:hover span{
+   opacity: 0.5;
+    color: #fff;
+   
+  }
 
 footer {
   background: #0077b6;
@@ -382,23 +385,32 @@ p strong{
 }
 
 .skills-category {
-  background: #136890;
+   background: #044f95;;
   color: ghostwhite;
   padding: 20px;
   border-radius: 10px;
   margin: 20px auto;
   width: 70%;
   text-align: left;
- 
-  box-shadow: 
-  0 0 15px rgba(255, 255, 255, 0.6),
-  0 0 30px rgba(255, 255, 255, 0.4),
-  0 0 60px rgba(255, 255, 255, 0.2);  
-
+   box-shadow: 
+  0 0 20px rgba(255, 255, 255, 0.8),
+  0 0 40px rgba(255, 255, 255, 0.6),
+  0 0 80px rgba(255, 255, 255, 0.4); 
+  transition: translateY 0.3s, box-shadow 0.3s;
 }
+.skills:hover {
+  transform: translateY(-5px);
+  box-shadow: 
+  0 0 20px rgba(255, 255, 255, 0.8),
+  0 0 40px rgba(255, 255, 255, 0.6),
+  0 0 80px rgba(255, 255, 255, 0.4); 
+
+} 
+
 .skills-category:hover {
   background: #074380;
   color: white;
+ 
 }
 .skills-category h3 {
   color: #ee5604;
