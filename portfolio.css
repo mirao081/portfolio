@@ -165,6 +165,11 @@ nav a:hover {
     text-decoration: none;
   transform: scale(1.1);
 }
+#home-page{
+    min-height: 100vh;
+    background: #002347;
+    color: white;
+}
 
 section {
   padding: 50px 20px;
@@ -303,7 +308,8 @@ p strong{
 /* portfolio page */
 #skills-page {
   min-height: 100vh;
-  background: #013062;
+  
+  background: #002347;
   color: white;
   padding: 50px 20px;
   text-align: center;
@@ -393,7 +399,7 @@ p strong{
 /* project page */
 #projects-page {
   min-height: 100vh;
-  background: #02356b;
+  background: #002347;;
   color: white;
   padding: 50px 20px;
   text-align: center;
@@ -469,7 +475,7 @@ p strong{
 }
 #resume-page{
     min-height: 100vh;
-  background: #02356b;
+  background: #002347;
   color: white;
   padding: 50px 20px;
   text-align: center;
@@ -494,14 +500,7 @@ p strong{
     text-decoration: none;
   transform: scale(1.1);
 }
-/* resume page */
-#resume-page {
-  min-height: 100vh;
-  background: #013062;
-  color: white;
-  padding: 50px 20px;
-  text-align: center;
-}
+
 
 #resume-page h2 {
   color: #ee5604;
@@ -583,7 +582,7 @@ p strong{
 /* contact page */
 #contact-page {
   min-height: 10vh;
-  background: #013062;
+    background: #002347;;
   color: white;
   padding: 50px 20px;
   text-align: center;
