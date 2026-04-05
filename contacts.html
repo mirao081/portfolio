@@ -17,8 +17,8 @@
       <img src="portfolio/images/logo.png" alt="Edutech Logo" class="logo">
 
       <div class="hamburger">
-      <i class="fas fa-bars"></i>
-    </div>
+        <i class="fas fa-bars"></i>
+      </div>
 
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
@@ -33,31 +33,50 @@
 
   <!-- Contact Section -->
   <section id="contact-page">
-    <h2>Contact Me</h2>
+    <h2>Contact</h2>
     <p class="contact-intro">
       I’d love to hear from you! Whether you have a project idea, collaboration request, or just want to say hello, feel free to reach out.
     </p>
 
-    <!-- Contact Form -->
-    <form class="contact-form">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit" class="btn">Send Message</button>
-    </form>
+    <div class="contact-container">
+      <!-- Contact Form -->
+      <div class="contact-form-card">
+        <form class="contact-form">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" required>
 
-    <!-- Contact Info -->
-    <div class="contact-info">
-      <p><strong>Email:</strong> chineduarize4@email.com</p>
-      <p><strong>Phone:</strong> +234-810-468-4362</p>
-      <p><strong>Location:</strong> Awka, Nigeria</p>
-    </div>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Your Email" required>
 
-    <!-- Social Links -->
-    <div class="social-links">
-      <a href="https://github.com/mirao081" target="_blank">GitHub</a>
-      <a href="https://www.linkedin.com/in/chinedu-arize-458a443ba" target="_blank">LinkedIn</a>
-      <a href="https://twitter.com/ArizeChine52874" target="_blank">Twitter</a>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+        <p class="privacy-note">Your information will be kept confidential.</p>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="contact-info-card">
+        <h3>Get in Touch</h3>
+        <p><i class="fas fa-envelope"></i> 
+          <a href="mailto:chineduarize4@gmail.com">chineduarize4@gmail.com</a></p>
+        <p><i class="fas fa-phone"></i> 
+          <a href="tel:+2348104684362">+234-810-468-4362</a></p>
+        <p><i class="fas fa-map-marker-alt"></i> Awka, Nigeria</p>
+
+        <!-- Social Links -->
+        <div class="social-links">
+          <a href="https://github.com/mirao081" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/chinedu-arize-458a443ba" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://twitter.com/ArizeChine52874" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+
+        <!-- Map Embed -->
+        <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63461.048576187706!2d7.03562595174969!3d6.222059353958734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104382bd8b94e753%3A0xcf2391eb8abd4753!2sAwka%2C%20Anambra!5e0!3m2!1sen!2sng!4v1775418064028!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
     </div>
   </section>
 
