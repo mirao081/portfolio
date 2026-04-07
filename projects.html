@@ -4,18 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projects - Edutech Portfolio</title>
+
+  <!-- CSS -->
   <link rel="stylesheet" href="portfolio.css">
+
+  <!-- Fonts (match index.html) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Poppins:wght@100..900&family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body>
+
+<body class="projects-page">
+
   <!-- Header -->
   <header>
     <nav>
       <img src="portfolio/images/logo.png" alt="Edutech Logo" class="logo">
-      <div class="hamburger"><i class="fas fa-bars"></i></div>
+
+      <!-- ✅ SAME hamburger everywhere -->
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- Nav -->
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
@@ -27,85 +43,105 @@
     </nav>
   </header>
 
-  <!-- Projects Section -->
-  <section id="projects-page">
-    <h2>My Projects</h2>
-    <p class="projects-intro">
-      Here are some of the projects I’ve worked on, showcasing my skills in front-end and back-end development.
-    </p>
+  <!-- ✅ Main wrapper -->
+  <main>
 
-    <div class="project-grid">
-      <!-- Project Card 1 -->
-      <div class="project-card">
-        <a href="portfolio/images/Screenshot (55).png" target="_blank">
-          <img src="portfolio/images/Screenshot (55).png" alt="Project One Screenshot">
-        </a>
-        <h3>Responsive Portfolio Website</h3>
-        <p>A modern, mobile-friendly portfolio built with HTML, CSS, and JavaScript. Designed to highlight personal projects and skills with smooth animations.</p>
-        <ul class="project-features">
-          <li>Responsive design with mobile-first approach</li>
-          <li>Clean UI with smooth animations</li>
-          <li>Deployed on GitHub Pages</li>
-        </ul>
-        <div class="tech-stack">
-          <span>HTML</span><span>CSS</span><span>JavaScript</span>
+    <!-- Projects Section -->
+    <section id="projects-page">
+      <h2>My Projects</h2>
+
+      <p class="projects-intro">
+        Here are some of the projects I’ve worked on, showcasing my skills in front-end and back-end development.
+      </p>
+
+      <div class="project-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card">
+          <a href="portfolio/images/Screenshot (55).png" target="_blank">
+            <img src="portfolio/images/Screenshot (55).png" alt="Project One Screenshot">
+          </a>
+          <h3>Responsive Portfolio Website</h3>
+          <p>A modern, mobile-friendly portfolio built with HTML, CSS, and JavaScript.</p>
+
+          <ul class="project-features">
+            <li>Responsive design</li>
+            <li>Smooth animations</li>
+            <li>Deployed on GitHub Pages</li>
+          </ul>
+
+          <div class="tech-stack">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+
+          <a href="https://github.com/mirao081/portfolio" target="_blank" class="btn">View Code</a>
+          <a href="https://mirao081.github.io/portfolio/" target="_blank" class="btn">Live Demo</a>
         </div>
-        <a href="https://github.com/mirao081/portfolio" target="_blank" class="btn">View Code</a>
-        <a href="https://mirao081.github.io/portfolio/" target="_blank" class="btn">Live Demo</a>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+          <a href="portfolio/images/Screenshot (57).png" target="_blank">
+            <img src="portfolio/images/Screenshot (57).png" alt="Calculator Screenshot">
+          </a>
+          <h3>Calculator Project</h3>
+          <p>A simple calculator with clean UI and responsive layout.</p>
+
+          <ul class="project-features">
+            <li>Basic arithmetic operations</li>
+            <li>Responsive design</li>
+            <li>Lightweight</li>
+          </ul>
+
+          <div class="tech-stack">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+
+          <a href="https://github.com/mirao081/calculator" target="_blank" class="btn">View Code</a>
+          <a href="https://mirao081.github.io/calculator/" target="_blank" class="btn">Live Demo</a>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+          <a href="portfolio/images/Screenshot (61).png" target="_blank">
+            <img src="portfolio/images/Screenshot (61).png" alt="Boutique App Screenshot">
+          </a>
+          <h3>Boutique Thrift App</h3>
+          <p>Django-powered thrift shopping app with inventory management.</p>
+
+          <ul class="project-features">
+            <li>Inventory system</li>
+            <li>User-friendly UI</li>
+            <li>Deployed online</li>
+          </ul>
+
+          <div class="tech-stack">
+            <span>Python</span><span>Django</span><span>Bootstrap</span>
+          </div>
+
+          <a href="https://github.com/mirao081/myBoutique" target="_blank" class="btn">View Code</a>
+          <a href="https://Chinedu1987.pythonanywhere.com" target="_blank" class="btn">Live Demo</a>
+        </div>
+
       </div>
 
-      <!-- Project Card 2 -->
-      <div class="project-card">
-        <a href="portfolio/images/Screenshot (57).png" target="_blank">
-          <img src="portfolio/images/Screenshot (57).png" alt="Calculator Project Screenshot">
-        </a>
-        <h3>Calculator Project</h3>
-        <p>A simple yet functional calculator built with HTML, CSS, and JavaScript. It supports basic arithmetic operations and has a clean, responsive design.</p>
-        <ul class="project-features">
-          <li>Supports basic arithmetic operations</li>
-          <li>Responsive layout for all devices</li>
-          <li>Lightweight and fast</li>
-        </ul>
-        <div class="tech-stack">
-          <span>HTML</span><span>CSS</span><span>JavaScript</span>
-        </div>
-        <a href="https://github.com/mirao081/calculator" target="_blank" class="btn">View Code</a>
-        <a href="https://mirao081.github.io/calculator/" target="_blank" class="btn">Live Demo</a>
+      <!-- Testimonials -->
+      <div class="project-testimonials">
+        <h3>What People Say:</h3>
+        <blockquote>“Edutech’s portfolio site is sleek and professional.”</blockquote>
+        <blockquote>“Strong back-end skills and great UX.”</blockquote>
       </div>
 
-      <!-- Project Card 3 -->
-      <div class="project-card">
-        <a href="portfolio/images/Screenshot (61).png" target="_blank">
-          <img src="portfolio/images/Screenshot (61).png" alt="Boutique App Screenshot">
-        </a>
-        <h3>Boutique Thrift App</h3>
-        <p>A boutique thrift shopping application built with Django, designed to showcase second-hand fashion items, manage inventory, and provide a smooth browsing experience for customers.</p>
-        <ul class="project-features">
-          <li>Inventory management system</li>
-          <li>User-friendly browsing experience</li>
-          <li>Deployed on PythonAnywhere</li>
-        </ul>
-        <div class="tech-stack">
-          <span>Python</span><span>Django</span><span>Bootstrap</span>
-        </div>
-        <a href="https://github.com/mirao081/myBoutique" target="_blank" class="btn">View Code</a>
-        <a href="https://Chinedu1987.pythonanywhere.com" target="_blank" class="btn">Live Demo</a>
-      </div>
-    </div>
+    </section>
 
-    <!-- Testimonials -->
-    <div class="project-testimonials">
-      <h3>What People Say:</h3>
-      <blockquote>“Edutech’s portfolio site is sleek, responsive, and professional — a great showcase of his skills.”</blockquote>
-      <blockquote>“The Boutique Thrift App demonstrates strong back-end skills and attention to user experience.”</blockquote>
-    </div>
-  </section>
+  </main>
 
   <!-- Footer -->
   <footer>
     <p>&copy; 2026 Edutech. All rights reserved.</p>
   </footer>
 
+  <!-- JS -->
   <script src="portfolio.js"></script>
+
 </body>
 </html>

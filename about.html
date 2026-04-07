@@ -4,21 +4,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About - Edutech Portfolio</title>
+
   <link rel="stylesheet" href="portfolio.css">
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Poppins:wght@100..900&family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body>
+
+<body class="about-page">
+
+  <!-- Header -->
   <header>
     <nav>
       <img src="portfolio/images/logo.png" alt="Edutech Logo" class="logo">
 
+      <!-- Hamburger (same as index.html) -->
       <div class="hamburger">
-      <i class="fas fa-bars"></i>
-    </div>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
 
+      <!-- Nav Links -->
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html" class="active">About</a></li>
@@ -30,39 +42,43 @@
     </nav>
   </header>
 
-  <!-- About Page Content -->
-  <section id="about-page">
-    <h2>About Me</h2>
+  <!-- Main wrapper (IMPORTANT) -->
+  <main>
 
-    <div class="about-container">
-      <div class="about-text">
-        <p>
-          Hi, I’m <strong>Edutech</strong> — a passionate full-stack developer specializing in 
-          <strong>HTML, CSS, JavaScript, React, Python, and Django</strong>. 
-          I build modern, scalable, and responsive educational platforms that 
-          transform ideas into powerful learning experiences.
-        </p>
-        <p>
-          My mission is to combine clean design with robust functionality, 
-          creating tools that empower learners and educators worldwide.
-        </p>
+    <!-- About Section -->
+    <section id="about-page">
+      <h2>About Me</h2>
+
+      <div class="about-container">
+        <div class="about-text">
+          <p>
+            Hi, I’m <strong>Edutech</strong> — a passionate full-stack developer specializing in 
+            <strong>HTML, CSS, JavaScript, React, Python, and Django</strong>. 
+            I build modern, scalable, and responsive educational platforms that 
+            transform ideas into powerful learning experiences.
+          </p>
+          <p>
+            My mission is to combine clean design with robust functionality, 
+            creating tools that empower learners and educators worldwide.
+          </p>
+        </div>
+
+        <div class="about-image">
+          <img src="portfolio/images/image.png" alt="Edutech Portrait">
+        </div>
       </div>
 
-      <div class="about-image">
-        <img src="portfolio/images/image.png" alt="Edutech Portrait">
+      <div class="about-extra">
+        <h3>Core Expertise</h3>
+        <ul>
+          <li>Front-End Development (HTML, CSS, JavaScript, React)</li>
+          <li>Back-End Development (Python, Django)</li>
+          <li>Responsive Design & Accessibility</li>
+          <li>Building Scalable Educational Platforms</li>
+        </ul>
       </div>
-    </div>
 
-    <div class="about-extra">
-      <h3>Core Expertise</h3>
-      <ul>
-        <li>Front-End Development (HTML, CSS, JavaScript, React)</li>
-        <li>Back-End Development (Python, Django)</li>
-        <li>Responsive Design & Accessibility</li>
-        <li>Building Scalable Educational Platforms</li>
-      </ul>
-    </div>
-    <div class="about-stats">
+      <div class="about-stats">
         <div class="stat">
           <h3>2+</h3>
           <p>Years of Experience</p>
@@ -88,16 +104,22 @@
       </div>
 
       <div class="about-cta">
-        <a href="portfolio/images/my resume.pdf"target="_blank" class="btn">Download My Resume</a>
+        <a href="portfolio/images/my resume.pdf" target="_blank" class="btn">
+          Download My Resume
+        </a>
       </div>
 
-  </section>
-      
+    </section>
 
+  </main>
+
+  <!-- Footer -->
   <footer>
     <p>&copy; 2026 Edutech. All rights reserved.</p>
   </footer>
 
+  <!-- JS -->
   <script src="portfolio.js"></script>
+
 </body>
 </html>

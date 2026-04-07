@@ -4,21 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Skills - Edutech Portfolio</title>
+
+  <!-- CSS -->
   <link rel="stylesheet" href="portfolio.css">
+
+  <!-- Fonts (match index.html exactly) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Poppins:wght@100..900&family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body>
+
+<body class="skills-page">
+
+  <!-- Header -->
   <header>
     <nav>
       <img src="portfolio/images/logo.png" alt="Edutech Logo" class="logo">
 
+      <!-- ✅ SAME hamburger -->
       <div class="hamburger">
-      <i class="fas fa-bars"></i>
-    </div>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
 
+      <!-- Nav -->
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
@@ -30,94 +43,107 @@
     </nav>
   </header>
 
-  <!-- Skills Page Content -->
-  <section id="skills-page">
-    <h2>My Skills</h2>
-    <p class="skills-intro">
-      I specialize in building modern, scalable, and responsive applications. 
-      My expertise spans both front-end and back-end technologies, enabling me 
-      to deliver complete solutions from design to deployment.
-    </p>
+  <!-- ✅ Main wrapper -->
+  <main>
 
-    <!-- Categorized Skills -->
-    <div class="skills-grid">
-    <div class="skills-category">
-      <h3>Front-End Development</h3>
-      <ul>
-        <li>HTML5</li>
-        <li>CSS3 / Sass</li>
-        <li>JavaScript (ES6+)</li>
-        <li>React.js</li>
-        <li>Responsive Design</li>
-      </ul>
-    </div>
+    <!-- Skills Section -->
+    <section id="skills-page">
+      <h2>My Skills</h2>
 
-    <div class="skills-category">
-      <h3>Back-End Development</h3>
-      <ul>
-        <li>Python</li>
-        <li>Django</li>
-        <li>REST APIs</li>
-        <li>Database Management (PostgreSQL, MySQL)</li>
-      </ul>
-    </div>
+      <p class="skills-intro">
+        I specialize in building modern, scalable, and responsive applications.
+      </p>
 
-    <div class="skills-category">
-      <h3>Tools & Workflow</h3>
-      <ul>
-        <li>Git & GitHub</li>
-        <li>Agile / Scrum</li>
-        <li>Testing & Debugging</li>
-        <li>Deployment (Heroku, AWS)</li>
-      </ul>
-    </div>
+      <!-- Categories -->
+      <div class="skills-grid">
 
-    <div class="skills-category">
-      <h3>Soft Skills</h3>
-      <ul>
-        <li><i class="fas fa-users"></i> Team Collaboration</li>
-        <li><i class="fas fa-comments"></i> Communication</li>
-        <li><i class="fas fa-lightbulb"></i> Problem-Solving</li>
-        <li><i class="fas fa-clock"></i> Time Management</li>
-      </ul>
-    </div>
-  </div>
+        <div class="skills-category">
+          <h3>Front-End Development</h3>
+          <ul>
+            <li>HTML5</li>
+            <li>CSS3 / Sass</li>
+            <li>JavaScript (ES6+)</li>
+            <li>React.js</li>
+            <li>Responsive Design</li>
+          </ul>
+        </div>
 
+        <div class="skills-category">
+          <h3>Back-End Development</h3>
+          <ul>
+            <li>Python</li>
+            <li>Django</li>
+            <li>REST APIs</li>
+            <li>PostgreSQL, MySQL</li>
+          </ul>
+        </div>
 
-    <!-- Call-to-action -->
-    <div class="skills-cta">
-      <a href="portfolio/images/my resume.pdf" target="_blank" class="btn">Download Full Resume</a>
-    </div>
+        <div class="skills-category">
+          <h3>Tools & Workflow</h3>
+          <ul>
+            <li>Git & GitHub</li>
+            <li>Agile / Scrum</li>
+            <li>Testing & Debugging</li>
+            <li>AWS</li>
+          </ul>
+        </div>
 
+        <div class="skills-category">
+          <h3>Soft Skills</h3>
+          <ul>
+            <li><i class="fas fa-users"></i> Team Collaboration</li>
+            <li><i class="fas fa-comments"></i> Communication</li>
+            <li><i class="fas fa-lightbulb"></i> Problem-Solving</li>
+            <li><i class="fas fa-clock"></i> Time Management</li>
+          </ul>
+        </div>
 
-    <!-- Proficiency Bars -->
-    <div class="skills-progress">
-      <h3>Proficiency Levels</h3>
-      <div class="skill-bar">
-        <span>HTML & CSS</span>
-        <div class="bar"><div class="fill" style="width:90%"></div></div>
       </div>
-      <div class="skill-bar">
-        <span>JavaScript</span>
-        <div class="bar"><div class="fill" style="width:85%"></div></div>
-      </div>
-      <div class="skill-bar">
-        <span>React</span>
-        <div class="bar"><div class="fill" style="width:80%"></div></div>
-      </div>
-      <div class="skill-bar">
-        <span>Python & Django</span>
-        <div class="bar"><div class="fill" style="width:75%"></div></div>
-      </div>
-    </div>
-        <!-- Soft Skills -->
-    
-  </section>
 
+      <!-- CTA -->
+      <div class="skills-cta">
+        <a href="portfolio/images/my resume.pdf" target="_blank" class="btn">
+          Download Full Resume
+        </a>
+      </div>
+
+      <!-- Progress -->
+      <div class="skills-progress">
+        <h3>Proficiency Levels</h3>
+
+        <div class="skill-bar">
+          <span>HTML & CSS</span>
+          <div class="bar"><div class="fill" style="width:90%"></div></div>
+        </div>
+
+        <div class="skill-bar">
+          <span>JavaScript</span>
+          <div class="bar"><div class="fill" style="width:85%"></div></div>
+        </div>
+
+        <div class="skill-bar">
+          <span>React</span>
+          <div class="bar"><div class="fill" style="width:80%"></div></div>
+        </div>
+
+        <div class="skill-bar">
+          <span>Python & Django</span>
+          <div class="bar"><div class="fill" style="width:75%"></div></div>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- Footer -->
   <footer>
     <p>&copy; 2026 Edutech. All rights reserved.</p>
   </footer>
 
+  <!-- JS -->
   <script src="portfolio.js"></script>
+
 </body>
 </html>
